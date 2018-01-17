@@ -9,6 +9,7 @@ var config = {
     pass: '****'
 };
 
+//需要忽略 ignoreTLS 的邮件服务器
 config = {
     host: 'polylinkex.polylink.net',
     sendFrom: 'frank.liu@polylink.net',
