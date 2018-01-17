@@ -6,15 +6,15 @@ var nodemailer = require('nodemailer');
 var config = {
     host: 'smtp.163.com',
     sendFrom: '17194378295@163.com',
-    pass: '****'
+    pass: '***'
 };
 
 //需要忽略 ignoreTLS 的邮件服务器
-config = {
-    host: 'polylinkex.polylink.net',
-    sendFrom: 'frank.liu@polylink.net',
-    pass: '***'
-};
+//config = {
+//    host: 'polylinkex.polylink.net',
+//    sendFrom: 'frank.liu@polylink.net',
+//    pass: '***'
+//};
 
 var option = {
     host: config.host,
@@ -33,8 +33,8 @@ var data = {
     from: config.sendFrom,
     to: '1083947028@qq.com',
     subject: 'Message title',
-    text: config.sendFrom + ' Plaintext version of the message',
-    html: '<p>HTML version of the message</p>'
+    //text: config.sendFrom + ' Plaintext version of the message',
+    html: config.sendFrom + '<p>HTML version of the message</p>'
 };
 
 //发送邮件
